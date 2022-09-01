@@ -1,27 +1,24 @@
-let num1 = 10;
-let num2 = 25;
-function addition(){
-    let sum =  num1 + num2;
-    console.log(sum);
+
+const sum = (num1, num2) => {
+    return num1 + num2 ;
 }
 
-function subtraction(){
-    let difference = num1 - num2;
-    console.log(difference);
+const difference = (num1, num2) => {
+    return num1 - num2;
 }
 
-function multiplication(){
-    let product = num1 * num2
-    console.log(product);
+const product = (num1 , num2) => {
+    return num1 * num2;
 }
 
-function division() {
-    let divide = num1 / num2;
-    console.log(divide);
+const division = (num1 , num2) =>{
+    return num1 / num2;
 }
 
-addition();
-subtraction();
-multiplication();
-division();
+function operate(a, b, operator) {
+    if(operator === '+'){
+        return sum(a, b);
+    }
+}
 
+console.log(operate(1,3,'+'));

@@ -1,11 +1,20 @@
 body{
     background-color: #525252;
+
+}
+
+.calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #keypad{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: #414141;
+    width: 600px;
+    
 }
 
 #keypad > div{
@@ -13,11 +22,16 @@ body{
     background-color: #313131;
     color: #CA3E47;
     text-align: center;
+    padding: 20px;
 }
 
 #screen{
     grid-column-start: 1;
     grid-column-end: 5;
+}
+
+#division-symbol{
+    font-weight: 900;
 }
 
 #plus-symbol{

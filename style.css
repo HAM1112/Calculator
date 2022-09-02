@@ -1,0 +1,39 @@
+body{
+    background-color: #525252;
+}
+
+#keypad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #414141;
+}
+
+#keypad > div{
+    border: 4px solid #CA3E47;
+    background-color: #313131;
+    color: #CA3E47;
+    text-align: center;
+}
+
+#screen{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#plus-symbol{
+    grid-column-start: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+#equal-symbol{
+    grid-column-start: 4;
+    grid-row-start: 5;
+    grid-row-end: 7;  
+}
+
+#zero{
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

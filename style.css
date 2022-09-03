@@ -1,33 +1,57 @@
 body{
     background-color: #525252;
-
 }
 
-.calculator{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1{
+    text-align: center;
+    background-color: #313131;
+    color: #CA3E47;
+    padding: 20px;
+ 
 }
 
 #keypad{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: #414141;
-    width: 600px;
-    
+    background-color: #414141;  
+    border-radius: 25px;
+    border: 10px solid #313131;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
 }
 
-#keypad > div{
-    border: 4px solid #CA3E47;
+#keypad > .screen{
+    border: 2px solid #CA3E47;
     background-color: #313131;
     color: #CA3E47;
-    text-align: center;
+    border-radius: 15px;
     padding: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
 }
 
-#screen{
-    grid-column-start: 1;
-    grid-column-end: 5;
+
+.screen > #input-screen{
+    text-align: right;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5 ,1fr);
+    grid-gap: 10px;
+    color: #CA3E47;
+    height: 350px;
+}
+
+#keys > div{
+    border: 2px solid #CA3E47;
+    border-radius: 15px;
+    background-color: #313131;
+    text-align: center;
+    padding-top: 20%;
 }
 
 #division-symbol{
@@ -36,18 +60,24 @@ body{
 
 #plus-symbol{
     grid-column-start: 4;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 #equal-symbol{
     grid-column-start: 4;
-    grid-row-start: 5;
-    grid-row-end: 7;  
+    grid-row-start: 4;
+    grid-row-end: 6;  
 }
 
 #zero{
-    grid-row-start: 6;
+    grid-row-start: 5;
     grid-column-start: 1;
     grid-column-end: 3;
 }
+
+#keypad > #keys > div:hover{
+    background-color: #CA3E47;
+    color: #313131;
+}
+
